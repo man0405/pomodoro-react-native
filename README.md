@@ -2,6 +2,14 @@
 
 The Pomodoro Timer app is built with Expo and React Native to help manage focused work and breaks effectively.
 
+## 🎥 Demo Video
+
+![Demo preview](assets/demo.gif)
+
+Full video (click to play / download):
+
+[Watch the demo video (MP4)](assets/demo.mp4)
+
 ## ✨ Key Features
 
 ### Minimum Requirements ✅
@@ -191,32 +199,3 @@ npx eas build --platform all
 ---
 
 Made with ❤️ by Man Nguyen
-
-## 🎥 Demo Video
-
-A short demo of the app. GitHub's README rendering doesn't reliably play local video files inline when using raw HTML <video> tags. The most reliable ways to show a demo inside the README are:
-
-1. Add an animated GIF preview (`assets/demo.gif`) — GIFs display inline in GitHub READMEs.
-2. Add the full MP4 to the repo (`assets/demo.mp4`) and link to it — clicking the link opens the video in the browser.
-
-If you add `assets/demo.gif`, it will display inline automatically; add `assets/demo.mp4` if you want the full-resolution video available for download/playback.
-
-GIF preview (will display on GitHub if `assets/demo.gif` exists):
-
-![Demo preview](assets/demo.gif)
-
-Full video (click to play / download):
-
-[Watch the demo video (MP4)](assets/demo.mp4)
-
-Optional: host the video externally (YouTube, Vimeo, CDN) and embed or link to it. Embedding via iframe is usually sanitized by GitHub and may not work in the repo view, so a hosted link is the safest option.
-
-How to add the files:
-
-1. Place an animated preview at `assets/demo.gif` (small, ~1-5s loop). This will show inline in the README.
-2. Place the full demo at `assets/demo.mp4` (keep under ~50MB or use Git LFS for larger files).
-
-Notes:
-
-- GIFs are great for short previews but are larger per second than optimized video. Use a short loop and optimized settings.
-- For high-quality playback, host the MP4 on YouTube/Vimeo/CDN and link to it from the README.
