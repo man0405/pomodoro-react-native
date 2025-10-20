@@ -1,30 +1,55 @@
 {
-  "expo": {
-    "name": "Pomodoro_React_Native",
-    "slug": "Pomodoro_React_Native",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
-  }
+	"expo": {
+		"name": "Pomodoro Timer",
+		"slug": "pomodoro-timer",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"userInterfaceStyle": "light",
+		"newArchEnabled": true,
+		"splash": {
+			"image": "./assets/splash-icon.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"infoPlist": {
+				"UIBackgroundModes": [
+					"background-processing",
+					"background-app-refresh"
+				],
+				"NSUserNotificationUsageDescription": "This app uses notifications to show timer progress and alert you when Pomodoro sessions are complete."
+			}
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#ffffff"
+			},
+			"edgeToEdgeEnabled": true,
+			"predictiveBackGestureEnabled": false,
+			"permissions": [
+				"android.permission.RECEIVE_BOOT_COMPLETED",
+				"android.permission.WAKE_LOCK",
+				"android.permission.VIBRATE",
+				"android.permission.POST_NOTIFICATIONS",
+				"android.permission.FOREGROUND_SERVICE"
+			]
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		},
+		"plugins": [
+			[
+				"expo-notifications",
+				{
+					"icon": "./assets/notification-icon.png",
+					"color": "#ef4444",
+					"sounds": ["./assets/notification-sound.wav"]
+				}
+			]
+		]
+	}
 }
