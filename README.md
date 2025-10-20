@@ -13,7 +13,6 @@ The Pomodoro Timer app is built with Expo and React Native to help manage focuse
 
 ### Extended Features ✅
 
-````markdown
 # 🍅 Pomodoro Timer App
 
 The Pomodoro Timer app is built with Expo and React Native to help manage focused work and breaks effectively.
@@ -221,4 +220,3 @@ Notes:
 
 - GIFs are great for short previews but are larger per second than optimized video. Use a short loop and optimized settings.
 - For high-quality playback, host the MP4 on YouTube/Vimeo/CDN and link to it from the README.
-````
